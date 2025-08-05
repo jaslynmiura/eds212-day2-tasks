@@ -1,0 +1,12 @@
+---
+title: "day2-tasks"
+author: "Jaslyn Miura"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
