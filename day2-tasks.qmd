@@ -10,3 +10,26 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
+```{r}
+# SECTION 3
+
+# create and store functions
+fx <- expression(x^2)
+Pa <- expression(2 *(3 *a + 2)^4 - 5)
+
+# find the derivatives of the functions
+df_dx <- D(expr =  fx, name = "x")
+dP_da <- D(expr = Pa, name = "a")
+
+### find the slope at each point x = 3, a = 1.2
+
+# storing the specific values
+x <- 3
+a <- 1.2
+
+# evaluating the derivative for the slope
+x_3 <- eval(df_dx)
+a_1.2 <- eval(dP_da)
+
+```
+
